@@ -1,0 +1,11 @@
+.courses-section {
+    background-color: #e9ecef;
+}
+
+.course-card {
+    border-left: 4px solid #005f73;
+}
+
+.course-card h5 {
+    color: #005f73;
+}

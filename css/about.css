@@ -1,0 +1,12 @@
+.about-section {
+    background-color: #fff;
+}
+
+.about-section .card {
+    border: none;
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+}
+
+.about-section h3 {
+    color: #005f73;
+}

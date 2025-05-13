@@ -1,0 +1,11 @@
+.resources-section {
+    background: linear-gradient(to bottom, #f8f9fa, #d1e8ed);
+}
+
+.resource-card {
+    border-top: 3px solid #005f73;
+}
+
+.resource-card h5 {
+    color: #005f73;
+}
