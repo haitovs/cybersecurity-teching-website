@@ -3,25 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Download free cybersecurity resources, including guides, cheat sheets, and checklists at CyberSecLearn."
-        />
-        <meta name="keywords" content="cybersecurity resources, hacking guides, cheat sheets" />
-        <meta name="author" content="CyberSecLearn" />
         <title>Resources - CyberSecLearn</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/resources.css" />
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" />
-                    CyberSecLearn
+                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" /> CyberSecLearn
                 </a>
                 <button
                     class="navbar-toggler"
@@ -46,78 +39,173 @@
             </div>
         </nav>
 
-        <!-- Resources Section -->
-        <section class="py-5 mt-5 resources-section">
+        <!-- Resources Hero Section -->
+        <section class="resources-hero-section text-white text-center">
             <div class="container">
-                <h1 class="text-center mb-5">Offline Resources</h1>
-                <p class="text-center lead mb-5">Download these resources to learn cybersecurity anytime, anywhere.</p>
+                <h1 class="display-4 fw-bold">Cybersecurity Resources</h1>
+                <p class="lead">Access free and premium resources to enhance your cybersecurity skills.</p>
+            </div>
+        </section>
+
+        <!-- Offline Resources Section -->
+        <section class="resources-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Offline Resources</h2>
+                <p class="text-center mb-4">Download these resources to learn cybersecurity anytime, anywhere.</p>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
+                            <img src="assets/beginner-path.png" class="card-img-top" alt="Cybersecurity Basics Guide" />
                             <div class="card-body">
                                 <h5 class="card-title">Cybersecurity Basics Guide</h5>
                                 <p class="card-text">
                                     A comprehensive PDF covering threats, vulnerabilities, and security principles.
                                 </p>
-                                <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                                <a href="#download" class="btn btn-primary">Download PDF</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
+                            <img src="assets/course-linux.png" class="card-img-top" alt="Top 25 Linux Commands" />
                             <div class="card-body">
                                 <h5 class="card-title">Top 25 Linux Commands for Hackers</h5>
                                 <p class="card-text">A handy PDF guide for essential Linux commands used in cybersecurity.</p>
-                                <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                                <a href="#download" class="btn btn-primary">Download PDF</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
+                            <img src="assets/hero-pattern.jpg" class="card-img-top" alt="Top 25 Linux Commands" />
                             <div class="card-body">
                                 <h5 class="card-title">Nmap & Netcat Cheat Sheet</h5>
                                 <p class="card-text">Quick reference for scanning and networking with Nmap and Netcat.</p>
-                                <a href="#" class="btn btn-outline-primary">Download Cheat Sheet</a>
+                                <a href="#download" class="btn btn-primary">Download Cheat Sheet</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Securing Your Local Network Checklist</h5>
                                 <p class="card-text">Step-by-step guide to harden your home or small office network.</p>
-                                <a href="#" class="btn btn-outline-primary">Download Checklist</a>
+                                <a href="#download" class="btn btn-primary">Download Checklist</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Metasploit Quick Start Guide</h5>
                                 <p class="card-text">Learn the basics of using Metasploit for penetration testing.</p>
-                                <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                                <a href="#download" class="btn btn-primary">Download PDF</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Wireshark Cheat Sheet</h5>
                                 <p class="card-text">Essential filters and commands for packet analysis with Wireshark.</p>
-                                <a href="#" class="btn btn-outline-primary">Download Cheat Sheet</a>
+                                <a href="#download" class="btn btn-primary">Download Cheat Sheet</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 resource-card">
+                        <div class="card resource-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">Python for Cybersecurity Guide</h5>
                                 <p class="card-text">A beginner's guide to using Python for security scripting and automation.</p>
-                                <a href="#" class="btn btn-outline-primary">Download PDF</a>
+                                <a href="#download" class="btn btn-primary">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card resource-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">CTF Starter Pack</h5>
+                                <p class="card-text">
+                                    A collection of tools, scripts, and tips to get started with Capture The Flag challenges.
+                                </p>
+                                <a href="#download" class="btn btn-primary">Download Pack</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card resource-card h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">OWASP Top 10 Cheat Sheet</h5>
+                                <p class="card-text">
+                                    Quick reference for understanding and mitigating the top web application vulnerabilities.
+                                </p>
+                                <a href="#download" class="btn btn-primary">Download Cheat Sheet</a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Online Resources Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Online Resources & Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Interactive Labs</h3>
+                                <p class="card-text">
+                                    Access our cloud-based labs to practice with tools like Kali Linux, Burp Suite, and Wireshark.
+                                </p>
+                                <a href="#labs" class="btn btn-outline-primary">Explore Labs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Community Forums</h3>
+                                <p class="card-text">
+                                    Join discussions, share knowledge, and collaborate on CTF challenges with our community.
+                                </p>
+                                <a href="community.html" class="btn btn-outline-primary">Join Community</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Blog & Tutorials</h3>
+                                <p class="card-text">
+                                    Read our expert-written articles on penetration testing, ethical hacking, and more.
+                                </p>
+                                <a href="#blog" class="btn btn-outline-primary">Read Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Tool Repository</h3>
+                                <p class="card-text">
+                                    Access a curated list of open-source cybersecurity tools and scripts on our GitHub.
+                                </p>
+                                <a href="https://github.com" class="btn btn-outline-primary">Visit Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container">
+                <h2>Boost Your Skills with Our Resources</h2>
+                <p class="lead">Download our guides or explore online tools to accelerate your cybersecurity learning.</p>
+                <a href="#download" class="btn btn-outline-light btn-lg">Get Started</a>
             </div>
         </section>
 
@@ -130,9 +218,9 @@
                     <a href="#" class="text-white">Terms of Service</a>
                 </p>
                 <div class="social-links mt-3">
-                    <a href="#" class="text-white mx-2">Twitter</a>
-                    <a href="#" class="text-white mx-2">GitHub</a>
-                    <a href="#" class="text-white mx-2">LinkedIn</a>
+                    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+                    <a href="https://github.com" class="text-white mx-2">GitHub</a>
+                    <a href="https://linkedin.com" class="text-white mx-2">LinkedIn</a>
                 </div>
             </div>
         </footer>

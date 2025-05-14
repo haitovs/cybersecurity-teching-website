@@ -1,5 +1,5 @@
 body {
-    padding-top: 60px; /* Space for fixed navbar */
+    padding-top: 70px; /* Space for fixed navbar */
     background-color: #f8f9fa;
     font-family: "Arial", sans-serif;
 }
@@ -66,4 +66,10 @@ footer a:hover {
 
 .social-links a:hover {
     color: #00a8cc !important;
+}
+
+.feature-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #005f73;
 }

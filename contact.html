@@ -1,99 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact CyberSecLearn for inquiries about our free cybersecurity courses and resources.">
-    <meta name="keywords" content="cybersecurity contact, ethical hacking, free courses">
-    <meta name="author" content="CyberSecLearn">
-    <title>Contact - CyberSecLearn</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo">
-                CyberSecLearn
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact - CyberSecLearn</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/contact.css" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" /> CyberSecLearn
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Contact Section -->
-    <section class=" contact-section">
-        <div class="container">
-            <h1 class="text-center mb-5">Contact Us</h1>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="fullName" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="fullName" placeholder="Enter your name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email Address</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="6" placeholder="Your message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                            </form>
+        <!-- Contact Hero Section -->
+        <section class="contact-hero-section text-white text-center">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Contact Us</h1>
+                <p class="lead">We're here to answer your questions and support your cybersecurity journey.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-section py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h2 class="card-title mb-4">Get in Touch</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="fullName" class="form-label">Full Name</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="fullName"
+                                            placeholder="Enter your full name"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email Address</label>
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            id="email"
+                                            placeholder="Enter your email address"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject</label>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            id="subject"
+                                            placeholder="Enter the subject"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea
+                                            class="form-control"
+                                            id="message"
+                                            rows="5"
+                                            placeholder="Enter your message"
+                                            required
+                                        ></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="assets/intermediate-path.png" class="img-fluid rounded shadow" alt="Contact Us Image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect With Us Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Connect With Us</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🐦</span>
+                                <h4 class="card-title">Twitter</h4>
+                                <p class="card-text">Follow us for cybersecurity tips, updates, and community events.</p>
+                                <a href="https://twitter.com" class="btn btn-outline-primary">Follow on Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🐙</span>
+                                <h4 class="card-title">GitHub</h4>
+                                <p class="card-text">Access our open-source tools and contribute to our projects.</p>
+                                <a href="https://github.com" class="btn btn-outline-primary">Visit GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">💼</span>
+                                <h4 class="card-title">LinkedIn</h4>
+                                <p class="card-text">Connect with our team and join professional discussions.</p>
+                                <a href="https://linkedin.com" class="btn btn-outline-primary">Connect on LinkedIn</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <h3>Connect With Us</h3>
-                <p>Follow us on social media for updates and community discussions.</p>
-                <div class="social-links">
-                    <a href="#" class="text-primary mx-2">Twitter</a>
-                    <a href="#" class="text-primary mx-2">GitHub</a>
-                    <a href="#" class="text-primary mx-2">LinkedIn</a>
+        </section>
+
+        <!-- Community Spotlight Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Community Spotlight</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body d-flex align-items-center">
+                                <img
+                                    src="assets/testimonial4.png"
+                                    class="rounded-circle me-3"
+                                    alt="Community Member"
+                                    style="width: 80px; height: 80px"
+                                />
+                                <div>
+                                    <h4 class="card-title">Join Our Community</h4>
+                                    <p class="card-text">
+                                        Engage with thousands of learners in our forums, participate in CTF challenges, and attend
+                                        exclusive webinars.
+                                    </p>
+                                    <a href="community.html" class="btn btn-primary">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-6">
+                        <img src="assets/advanced-path.png" class="img-fluid rounded shadow" alt="Community Spotlight" />
+                    </div> -->
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="py-4 bg-dark text-white text-center">
-        <div thecontainer">
-            <p>© 2025 CyberSecLearn. All rights reserved.</p>
-            <p>
-                <a href="#" class="text-white">Privacy Policy</a> |
-                <a href="#" class="text-white">Terms of Service</a>
-            </p>
-            <div class="social-links mt-3">
-                <a href="#" class="text-white mx-2">Twitter</a>
-                <a href="#" class="text-white mx-2">GitHub</a>
-                <a href="#" class="text-white mx-2">LinkedIn</a>
+        <!-- Call to Action Section -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container">
+                <h2>Have Questions? Reach Out!</h2>
+                <p class="lead">Contact us or join our community to start your cybersecurity journey today.</p>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Get in Touch</a>
             </div>
-        </div>
-    </footer>
+        </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- Footer -->
+        <footer class="py-4 bg-dark text-white text-center">
+            <div class="container">
+                <p>© 2025 CyberSecLearn. All rights reserved.</p>
+                <p>
+                    <a href="#" class="text-white">Privacy Policy</a> |
+                    <a href="#" class="text-white">Terms of Service</a>
+                </p>
+                <div class="social-links mt-3">
+                    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+                    <a href="https://github.com" class="text-white mx-2">GitHub</a>
+                    <a href="https://linkedin.com" class="text-white mx-2">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

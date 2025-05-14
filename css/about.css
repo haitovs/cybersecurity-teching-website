@@ -1,12 +1,100 @@
 .about-section {
     background-color: #fff;
+    position: relative;
+}
+
+.about-hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #005f73 100%);
+    padding: 80px 0;
+    margin-top: -70px; /* Offset for fixed navbar */
+    position: relative;
+    overflow: hidden;
 }
 
 .about-section .card {
     border: none;
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-section h3 {
     color: #005f73;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.about-section .card:hover .card-img-top {
+    transform: scale(1.02);
+}
+
+section::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #005f73;
+    opacity: 0.5;
+}
+
+.btn-primary::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.btn-primary:hover::after {
+    width: 150px;
+    height: 150px;
+}
+
+.btn-outline-primary::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 95, 115, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.btn-outline-primary:hover::after {
+    width: 150px;
+    height: 150px;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+.team-card .card-body {
+    padding: 1.5rem;
+}
+
+.team-card .rounded-circle {
+    transition: transform 0.3s;
+}
+
+.team-card:hover .rounded-circle {
+    transform: scale(1.1);
 }

@@ -3,25 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Learn about CyberSecLearn's mission to provide free cybersecurity education to everyone."
-        />
-        <meta name="keywords" content="cybersecurity education, ethical hacking, free learning" />
-        <meta name="author" content="CyberSecLearn" />
         <title>About - CyberSecLearn</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/about.css" />
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" />
-                    CyberSecLearn
+                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" /> CyberSecLearn
                 </a>
                 <button
                     class="navbar-toggler"
@@ -46,74 +39,172 @@
             </div>
         </nav>
 
-        <!-- About Section -->
-        <section class="py-5 mt-5 about-section">
+        <!-- About Hero Section -->
+        <section class="about-hero-section text-white text-center">
             <div class="container">
-                <h1 class="text-center mb-5">About CyberSecLearn</h1>
-                <div class="row g-4 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="card shadow-sm">
+                <h1 class="display-4 fw-bold">About CyberSecLearn</h1>
+                <p class="lead">Empowering the world with accessible, practical cybersecurity education.</p>
+            </div>
+        </section>
+
+        <!-- Mission and Vision Section -->
+        <section class="about-section py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="assets/certifications.png" class="card-img-top" alt="Our Mission" />
                             <div class="card-body">
-                                <h3>Our Mission</h3>
-                                <p>
+                                <h3 class="card-title">Our Mission</h3>
+                                <p class="card-text">
                                     CyberSecLearn was founded to empower individuals to secure the digital world. We believe
                                     cybersecurity education should be accessible to everyone, regardless of background or
                                     resources.
                                 </p>
-                                <p>
+                                <p class="card-text">
                                     Our mission is to provide free, structured, and practical learning paths that foster ethical
                                     responsibility and real-world skills.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="card shadow-sm">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <img src="assets/labs.png" class="card-img-top" alt="Our Vision" />
                             <div class="card-body">
-                                <h3>Our Vision</h3>
-                                <p>
+                                <h3 class="card-title">Our Vision</h3>
+                                <p class="card-text">
                                     We envision a world where cybersecurity knowledge is universal. By offering offline-compatible
                                     resources and comprehensive courses, we aim to bridge the skills gap and prepare learners for
                                     the challenges of the digital age.
                                 </p>
-                                <p>Our content is designed to be accessible anywhere, anytime.</p>
+                                <p class="card-text">Our content is designed to be accessible anywhere, anytime.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="text-center mt-5">
-                    <h3>Why Learn With Us?</h3>
-                    <div class="row g-4 mt-4">
-                        <div class="col-md-3">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body">
-                                    <p class="card-text">100% free and offline-accessible content</p>
-                                </div>
+            </div>
+        </section>
+
+        <!-- Why Learn With Us Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Why Learn With Us?</h2>
+                <div class="row g-4">
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🆓</span>
+                                <h4 class="card-title">100% Free Content</h4>
+                                <p class="card-text">
+                                    Access all our courses and resources at no cost, with offline compatibility for flexible
+                                    learning.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body">
-                                    <p class="card-text">Hands-on labs with real-world tools</p>
-                                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🛠️</span>
+                                <h4 class="card-title">Hands-On Labs</h4>
+                                <p class="card-text">
+                                    Practice with real-world tools like Kali Linux, Metasploit, and Wireshark in secure
+                                    environments.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body">
-                                    <p class="card-text">Community-driven support and resources</p>
-                                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🤝</span>
+                                <h4 class="card-title">Community Support</h4>
+                                <p class="card-text">
+                                    Join our vibrant community to collaborate, share knowledge, and participate in CTF challenges.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-body">
-                                    <p class="card-text">Focus on ethical hacking and responsibility</p>
-                                </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🔒</span>
+                                <h4 class="card-title">Ethical Focus</h4>
+                                <p class="card-text">
+                                    Learn ethical hacking with a strong emphasis on responsibility and legal practices.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Our Team Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Meet Our Team</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial1.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Team Member 1"
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Dr. Sarah Chen</h4>
+                                <p class="card-text text-muted">Lead Instructor</p>
+                                <p class="card-text">
+                                    Expert in penetration testing and OSCP-certified, Sarah designs our hands-on labs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial2.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Team Member 2"
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Michael Torres</h4>
+                                <p class="card-text text-muted">Content Developer</p>
+                                <p class="card-text">
+                                    A CEH-certified professional, Michael creates our ethical hacking curriculum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial3.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Team Member 3"
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Aisha Khan</h4>
+                                <p class="card-text text-muted">Community Manager</p>
+                                <p class="card-text">Aisha fosters our community, organizing CTF events and webinars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container">
+                <h2>Join Our Mission</h2>
+                <p class="lead">Start your cybersecurity journey with CyberSecLearn and help secure the digital world.</p>
+                <a href="courses.html" class="btn btn-outline-light btn-lg">Get Started</a>
             </div>
         </section>
 
@@ -126,9 +217,9 @@
                     <a href="#" class="text-white">Terms of Service</a>
                 </p>
                 <div class="social-links mt-3">
-                    <a href="#" class="text-white mx-2">Twitter</a>
-                    <a href="#" class="text-white mx-2">GitHub</a>
-                    <a href="#" class="text-white mx-2">LinkedIn</a>
+                    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+                    <a href="https://github.com" class="text-white mx-2">GitHub</a>
+                    <a href="https://linkedin.com" class="text-white mx-2">LinkedIn</a>
                 </div>
             </div>
         </footer>

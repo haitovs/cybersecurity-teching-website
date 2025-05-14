@@ -3,22 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Learn cybersecurity with free, hands-on courses and resources at CyberSecLearn." />
-        <meta name="keywords" content="cybersecurity, ethical hacking, penetration testing, free courses" />
-        <meta name="author" content="CyberSecLearn" />
         <title>CyberSecLearn - Master Cybersecurity</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/index.css" />
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" />
-                    CyberSecLearn
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" /> CyberSecLearn
                 </a>
                 <button
                     class="navbar-toggler"
@@ -33,7 +29,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
                         <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
@@ -44,47 +40,68 @@
         </nav>
 
         <!-- Hero Section -->
-        <header class="hero-section text-center text-white">
+        <section class="hero-section text-white text-center">
             <div class="container">
-                <h1 class="display-3 fw-bold">Welcome to CyberSecLearn</h1>
+                <!-- <img
+                    src="assets/hero-image.png"
+                    alt="Cybersecurity Hero"
+                    class="img-fluid hero-img mb-4"
+                    style="max-height: 300px"
+                /> -->
+                <h1 class="display-4 fw-bold">Welcome to CyberSecLearn</h1>
                 <p class="lead">Master cybersecurity with expert-led courses, hands-on labs, and real-world projects.</p>
                 <a href="courses.html" class="btn btn-primary btn-lg mt-3">Start Learning Now</a>
             </div>
-        </header>
+        </section>
 
-        <!-- Features Section -->
-        <section class="py-5 bg-light">
+        <!-- Why Choose Us Section -->
+        <section class="py-5">
             <div class="container">
                 <h2 class="text-center mb-5">Why Choose CyberSecLearn?</h2>
                 <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <div class="feature-icon">🔐</div>
-                                <h5 class="card-title">Cybersecurity Fundamentals</h5>
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🔐</span>
+                                <h3 class="card-title">Cybersecurity Fundamentals</h3>
                                 <p class="card-text">
-                                    Master the essentials of cyber defense, attack vectors, and modern security systems.
+                                    Master the essentials of cyber defense, attack vectors, and modern security systems with our
+                                    comprehensive curriculum.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <div class="feature-icon">💻</div>
-                                <h5 class="card-title">Hands-On Labs</h5>
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img
+                                    src="assets/labs.png"
+                                    alt="Hands-On Labs"
+                                    class="feature-img mb-3"
+                                    style="max-height: 100px"
+                                />
+                                <h3 class="card-title">Hands-On Labs</h3>
                                 <p class="card-text">
-                                    Practice with tools like Kali Linux, Metasploit, and Wireshark in simulated environments.
+                                    Practice with tools like Kali Linux, Metasploit, and Wireshark in secure, simulated
+                                    environments.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 border-0 shadow-sm">
-                            <div class="card-body text-center">
-                                <div class="feature-icon">🎓</div>
-                                <h5 class="card-title">Certification Prep</h5>
-                                <p class="card-text">Get ready for CEH, OSCP, CompTIA Security+, and other top certifications.</p>
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <img
+                                    src="assets/certifications.png"
+                                    alt="Certification Prep"
+                                    class="feature-img mb-3"
+                                    style="max-height: 100px"
+                                />
+                                <h3 class="card-title">Certification Prep</h3>
+                                <p class="card-text">
+                                    Get ready for CEH, OSCP, CompTIA Security+, and other top certifications with targeted
+                                    training.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -93,80 +110,124 @@
         </section>
 
         <!-- Learning Paths Section -->
-        <section class="py-5">
+        <section class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center mb-5">Explore Our Learning Paths</h2>
                 <div class="row g-4">
                     <div class="col-lg-4">
-                        <div class="card h-100 border-primary">
-                            <div class="card-header bg-primary text-white">
-                                <h5 class="mb-0">Beginner Path</h5>
-                            </div>
+                        <div class="card h-100">
+                            <img src="assets/beginner-path.png" class="card-img-top" alt="Beginner Path" />
                             <div class="card-body">
+                                <h3 class="card-title">Beginner Path</h3>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Security Awareness</li>
                                     <li class="list-group-item">Linux Basics</li>
                                     <li class="list-group-item">Networking Fundamentals</li>
                                 </ul>
+                                <a href="courses.html" class="btn btn-outline-primary mt-3">Start Beginner Path</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card h-100 border-primary">
-                            <div class="card-header bg-primary text-white">
-                                <h5 class="mb-0">Intermediate Path</h5>
-                            </div>
+                        <div class="card h-100">
+                            <img src="assets/intermediate-path.png" class="card-img-top" alt="Intermediate Path" />
                             <div class="card-body">
+                                <h3 class="card-title">Intermediate Path</h3>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Python for Security</li>
                                     <li class="list-group-item">Shell Scripting</li>
                                     <li class="list-group-item">Basic Exploitation Techniques</li>
                                 </ul>
+                                <a href="courses.html" class="btn btn-outline-primary mt-3">Start Intermediate Path</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="card h-100 border-primary">
-                            <div class="card-header bg-primary text-white">
-                                <h5 class="mb-0">Advanced Path</h5>
-                            </div>
+                        <div class="card h-100">
+                            <img src="assets/advanced-path.png" class="card-img-top" alt="Advanced Path" />
                             <div class="card-body">
+                                <h3 class="card-title">Advanced Path</h3>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">Red Teaming</li>
                                     <li class="list-group-item">Reverse Engineering</li>
                                     <li class="list-group-item">Malware Analysis</li>
                                 </ul>
+                                <a href="courses.html" class="btn btn-outline-primary mt-3">Start Advanced Path</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="text-center mt-4">
                     <p>All courses include assignments, downloadable resources, and quizzes.</p>
-                    <a href="courses.html" class="btn btn-outline-primary">View All Courses</a>
+                    <a href="courses.html" class="btn btn-primary">View All Courses</a>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="py-5 bg-dark text-white">
+        <!-- What You'll Learn Section -->
+        <section class="py-5">
             <div class="container">
                 <h2 class="text-center mb-5">What You'll Learn</h2>
                 <div class="row g-4">
                     <div class="col-md-6">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-transparent text-white">Penetration Testing</li>
-                            <li class="list-group-item bg-transparent text-white">Ethical Hacking Methodologies</li>
-                            <li class="list-group-item bg-transparent text-white">Web Application Security</li>
-                            <li class="list-group-item bg-transparent text-white">Linux for Hackers</li>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Linux" class="course-icon me-2" /> Penetration Testing
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Linux" class="course-icon me-2" /> Ethical Hacking
+                                Methodologies
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Linux" class="course-icon me-2" /> Web Application Security
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Linux" class="course-icon me-2" /> Linux for Hackers
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item bg-transparent text-white">Network Protocols and Attacks</li>
-                            <li class="list-group-item bg-transparent text-white">Cryptography Essentials</li>
-                            <li class="list-group-item bg-transparent text-white">Threat Intelligence and OSINT</li>
-                            <li class="list-group-item bg-transparent text-white">Incident Response and Forensics</li>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Network" class="course-icon me-2" /> Network Protocols and
+                                Attacks
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Network" class="course-icon me-2" /> Cryptography Essentials
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Network" class="course-icon me-2" /> Threat Intelligence and
+                                OSINT
+                            </li>
+                            <li class="list-group-item">
+                                <img src="assets/favicon.ico" alt="Network" class="course-icon me-2" /> Incident Response and
+                                Forensics
+                            </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Community Section -->
+        <section class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2>Join Our Cybersecurity Community</h2>
+                        <p>
+                            Connect with fellow learners, participate in Capture The Flag (CTF) challenges, and stay updated with
+                            the latest cybersecurity trends through our vibrant community.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li>🏆 Monthly CTF Competitions</li>
+                            <li>📚 Exclusive Webinars with Industry Experts</li>
+                            <li>🤝 Networking with Peers and Mentors</li>
+                        </ul>
+                        <a href="community.html" class="btn btn-primary mt-3">Join the Community</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/community.jpg" alt="Community" class="img-fluid rounded shadow" />
                     </div>
                 </div>
             </div>
@@ -177,53 +238,73 @@
             <div class="container">
                 <h2 class="text-center mb-5">Student Testimonials</h2>
                 <div class="row g-4">
-                    <div class="col-md-6">
-                        <blockquote class="blockquote p-4 border-start border-primary">
-                            <p>"CyberSecLearn gave me the confidence to pass the OSCP exam!"</p>
-                            <footer class="blockquote-footer">Ravi K., <cite title="Source Title">Security Analyst</cite></footer>
-                        </blockquote>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial1.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Ravi K."
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <p class="card-text">"CyberSecLearn gave me the confidence to pass the OSCP exam!"</p>
+                                <p class="card-text"><strong>Ravi K., Security Analyst</strong></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <blockquote class="blockquote p-4 border-start border-primary">
-                            <p>"The hands-on labs and explanations are top-notch. Highly recommended."</p>
-                            <footer class="blockquote-footer">
-                                Leila M., <cite title="Source Title">Junior Penetration Tester</cite>
-                            </footer>
-                        </blockquote>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial2.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Leila M."
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <p class="card-text">"The hands-on labs and explanations are top-notch. Highly recommended."</p>
+                                <p class="card-text"><strong>Leila M., Junior Penetration Tester</strong></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <blockquote class="blockquote p-4 border-start border-primary">
-                            <p>"The CTF challenges were both fun and educational!"</p>
-                            <footer class="blockquote-footer">
-                                Alex T., <cite title="Source Title">Cybersecurity Student</cite>
-                            </footer>
-                        </blockquote>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <img
+                                src="assets/testimonial3.png"
+                                class="rounded-circle mx-auto mt-3"
+                                alt="Alex T."
+                                style="width: 100px; height: 100px"
+                            />
+                            <div class="card-body">
+                                <p class="card-text">"The CTF challenges were both fun and educational!"</p>
+                                <p class="card-text"><strong>Alex T., Cybersecurity Student</strong></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- Call to Action Section -->
         <section class="py-5 bg-primary text-white text-center">
             <div class="container">
-                <h2 class="mb-4">Ready to Secure the Future?</h2>
+                <h2>Ready to Secure the Future?</h2>
                 <p class="lead">Join thousands of learners and start your cybersecurity journey today.</p>
-                <a href="courses.html" class="btn btn-light btn-lg">Enroll Now</a>
+                <a href="courses.html" class="btn btn-outline-light btn-lg">Enroll Now</a>
             </div>
         </section>
 
         <!-- Footer -->
         <footer class="py-4 bg-dark text-white text-center">
             <div class="container">
-                <p>© 2025 CyberSecLearn. All rights reserved.</p>
+                <p>&copy; 2025 CyberSecLearn. All rights reserved.</p>
                 <p>
                     <a href="#" class="text-white">Privacy Policy</a> |
                     <a href="#" class="text-white">Terms of Service</a>
                 </p>
                 <div class="social-links mt-3">
-                    <a href="#" class="text-white mx-2">Twitter</a>
-                    <a href="#" class="text-white mx-2">GitHub</a>
-                    <a href="#" class="text-white mx-2">LinkedIn</a>
+                    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+                    <a href="https://github.com" class="text-white mx-2">GitHub</a>
+                    <a href="https://linkedin.com" class="text-white mx-2">LinkedIn</a>
                 </div>
             </div>
         </footer>

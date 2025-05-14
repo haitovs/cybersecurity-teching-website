@@ -3,25 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-            name="description"
-            content="Explore free cybersecurity courses at CyberSecLearn, from fundamentals to advanced penetration testing."
-        />
-        <meta name="keywords" content="cybersecurity courses, ethical hacking, penetration testing, CTF" />
-        <meta name="author" content="CyberSecLearn" />
         <title>Courses - CyberSecLearn</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/common.css" />
         <link rel="stylesheet" href="css/courses.css" />
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" />
-                    CyberSecLearn
+                    <img src="assets/logo.png" alt="CyberSecLearn Logo" class="logo" /> CyberSecLearn
                 </a>
                 <button
                     class="navbar-toggler"
@@ -46,122 +39,353 @@
             </div>
         </nav>
 
-        <!-- Courses Section -->
-        <section class="py-5 courses-section">
+        <!-- Courses Hero Section -->
+        <section class="courses-hero-section text-white text-center">
             <div class="container">
-                <h1 class="text-center mb-5">Our Courses</h1>
-                <p class="text-center lead mb-5">Explore structured paths to become a cybersecurity expert.</p>
+                <h1 class="display-4 fw-bold">Our Courses</h1>
+                <p class="lead">Explore structured learning paths to become a cybersecurity expert.</p>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="courses-section py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">Choose Your Cybersecurity Journey</h2>
                 <div class="row g-4">
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
+                            <img src="assets/fundamentals.png" class="card-img-top" alt="Cybersecurity Fundamentals" />
                             <div class="card-body">
                                 <h5 class="card-title">1. Cybersecurity Fundamentals</h5>
                                 <p class="card-text">
                                     Introduction to threats, vulnerabilities, security policies, CIA triad, and risk management.
                                 </p>
-                                <p><strong>Duration:</strong> 4 weeks</p>
-                                <p><strong>Level:</strong> Beginner</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 4 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Beginner</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
+                            <img src="assets/course-network.png" class="card-img-top" alt="Network Security" />
                             <div class="card-body">
                                 <h5 class="card-title">2. Network Security</h5>
                                 <p class="card-text">
                                     Learn about firewalls, protocols, sniffing, spoofing, and network architecture.
                                 </p>
-                                <p><strong>Duration:</strong> 6 weeks</p>
-                                <p><strong>Level:</strong> Beginner</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 6 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Beginner</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
+                            <img src="assets/course-pattern.webp" class="card-img-top" alt="Linux for Hackers" />
                             <div class="card-body">
                                 <h5 class="card-title">3. Linux for Hackers</h5>
                                 <p class="card-text">
                                     Master Linux commands, file permissions, bash scripting, and tool installation.
                                 </p>
-                                <p><strong>Duration:</strong> 5 weeks</p>
-                                <p><strong>Level:</strong> Beginner</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 5 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Beginner</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">4. Ethical Hacking</h5>
                                 <p class="card-text">
                                     Learn reconnaissance, scanning, exploitation, post-exploitation, and reporting.
                                 </p>
-                                <p><strong>Duration:</strong> 8 weeks</p>
-                                <p><strong>Level:</strong> Intermediate</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 8 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Intermediate</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">5. Capture The Flag (CTF)</h5>
                                 <p class="card-text">Hands-on challenges in web, crypto, reverse engineering, and forensics.</p>
-                                <p><strong>Duration:</strong> 6 weeks</p>
-                                <p><strong>Level:</strong> Intermediate</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 6 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Intermediate</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">6. Advanced Penetration Testing</h5>
                                 <p class="card-text">
                                     Dive into advanced techniques like privilege escalation and lateral movement.
                                 </p>
-                                <p><strong>Duration:</strong> 10 weeks</p>
-                                <p><strong>Level:</strong> Advanced</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 10 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Advanced</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">7. Web Application Security</h5>
                                 <p class="card-text">Explore SQL injection, XSS, CSRF, and secure coding practices.</p>
-                                <p><strong>Duration:</strong> 7 weeks</p>
-                                <p><strong>Level:</strong> Intermediate</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 7 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Intermediate</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">8. Cryptography Essentials</h5>
                                 <p class="card-text">
                                     Understand encryption, hashing, digital signatures, and cryptographic attacks.
                                 </p>
-                                <p><strong>Duration:</strong> 5 weeks</p>
-                                <p><strong>Level:</strong> Intermediate</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 5 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Intermediate</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-3">
-                        <div class="card h-100 course-card">
+                    <div class="col-md-4">
+                        <div class="card course-card h-100">
                             <div class="card-body">
                                 <h5 class="card-title">9. Incident Response & Forensics</h5>
                                 <p class="card-text">Learn to detect, respond to, and investigate cyber incidents.</p>
-                                <p><strong>Duration:</strong> 8 weeks</p>
-                                <p><strong>Level:</strong> Advanced</p>
-                                <a href="#" class="btn btn-outline-primary">Enroll Now</a>
+                                <ul class="list-group list-group-flush mb-3">
+                                    <li class="list-group-item"><strong>Duration:</strong> 8 weeks</li>
+                                    <li class="list-group-item"><strong>Level:</strong> Advanced</li>
+                                </ul>
+                                <a href="#enroll" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Learning Features Section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Why Our Courses Stand Out</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🛠️</span>
+                                <h3 class="card-title">Hands-On Labs</h3>
+                                <p class="card-text">
+                                    Practice real-world scenarios using tools like Kali Linux, Metasploit, and Wireshark in safe,
+                                    simulated environments.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">📚</span>
+                                <h3 class="card-title">Expert-Led Content</h3>
+                                <p class="card-text">
+                                    Learn from industry professionals with years of experience in cybersecurity and ethical
+                                    hacking.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 text-center">
+                            <div class="card-body">
+                                <span class="feature-icon">🏆</span>
+                                <h3 class="card-title">Certification Alignment</h3>
+                                <p class="card-text">
+                                    Courses designed to prepare you for certifications like CEH, OSCP, and CompTIA Security+.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-5 faq-section">
+            <div class="container">
+                <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+                <div class="accordion" id="coursesFAQ">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq1">
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse1"
+                                aria-expanded="true"
+                                aria-controls="collapse1"
+                            >
+                                Do I need prior experience to start?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse1"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="faq1"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                No prior experience is required! Our beginner courses, like Cybersecurity Fundamentals, are
+                                designed for newcomers, providing step-by-step guidance to build a strong foundation in
+                                cybersecurity.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq2">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse2"
+                                aria-expanded="false"
+                                aria-controls="collapse2"
+                            >
+                                Are the courses self-paced?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse2"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faq2"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                Yes, all our courses are self-paced, allowing you to learn at your convenience with lifetime
+                                access to course materials, labs, and resources.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq3">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse3"
+                                aria-expanded="false"
+                                aria-controls="collapse3"
+                            >
+                                What tools will I use in the labs?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse3"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faq3"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                You'll gain hands-on experience with industry-standard tools like Kali Linux, Metasploit,
+                                Wireshark, Burp Suite, and Nmap in secure, cloud-based lab environments.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq4">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse4"
+                                aria-expanded="false"
+                                aria-controls="collapse4"
+                            >
+                                Can I interact with instructors?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse4"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faq4"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                Yes, our courses include access to discussion forums where you can ask questions and receive
+                                feedback from instructors and peers. Live Q&A sessions are also available for select courses.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq5">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse5"
+                                aria-expanded="false"
+                                aria-controls="collapse5"
+                            >
+                                Will I receive a certificate upon completion?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse5"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faq5"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                Absolutely! You'll earn a certificate of completion for each course, which you can showcase on
+                                your resume or LinkedIn profile to demonstrate your skills.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="faq6">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapse6"
+                                aria-expanded="false"
+                                aria-controls="collapse6"
+                            >
+                                Are there prerequisites for advanced courses?
+                            </button>
+                        </h2>
+                        <div
+                            id="collapse6"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="faq6"
+                            data-bs-parent="#coursesFAQ"
+                        >
+                            <div class="accordion-body">
+                                Advanced courses like Advanced Penetration Testing require familiarity with intermediate topics
+                                such as Linux, networking, and basic exploitation. We recommend completing our beginner and
+                                intermediate paths first.
                             </div>
                         </div>
                     </div>
@@ -178,9 +402,9 @@
                     <a href="#" class="text-white">Terms of Service</a>
                 </p>
                 <div class="social-links mt-3">
-                    <a href="#" class="text-white mx-2">Twitter</a>
-                    <a href="#" class="text-white mx-2">GitHub</a>
-                    <a href="#" class="text-white mx-2">LinkedIn</a>
+                    <a href="https://twitter.com" class="text-white mx-2">Twitter</a>
+                    <a href="https://github.com" class="text-white mx-2">GitHub</a>
+                    <a href="https://linkedin.com" class="text-white mx-2">LinkedIn</a>
                 </div>
             </div>
         </footer>

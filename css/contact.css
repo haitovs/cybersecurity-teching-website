@@ -1,17 +1,104 @@
 .contact-section {
     background: linear-gradient(to top, #f8f9fa, #d1e8ed);
+    position: relative;
+}
+
+.contact-hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #005f73 80%);
+    padding: 80px 0;
+    margin-top: -70px; /* Offset for fixed navbar */
+    position: relative;
+    overflow: hidden;
 }
 
 .contact-section .card {
     border: none;
     background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contact-section h1 {
+.contact-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h1,
+.contact-section h2 {
     color: #005f73;
 }
 
 .contact-section .form-control:focus {
     border-color: #005f73;
     box-shadow: 0 0 5px rgba(0, 95, 115, 0.5);
+}
+
+section::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background-color: #005f73;
+    opacity: 0.5;
+}
+
+.btn-primary::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.btn-primary:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.btn-outline-primary::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(0, 95, 115, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.4s, height 0.4s;
+}
+
+.btn-outline-primary:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #005f73;
+    margin-bottom: 1rem;
+}
+
+.contact-section .img-fluid {
+    transition: transform 0.3s;
+}
+
+.contact-section .img-fluid:hover {
+    transform: scale(1.02);
+}
+
+.community-card .rounded-circle {
+    transition: transform 0.3s;
+}
+
+.community-card:hover .rounded-circle {
+    transform: scale(1.1);
+}
+
+.community-card {
+    border-top: 3px solid #005f73;
 }
